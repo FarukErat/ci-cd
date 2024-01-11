@@ -75,7 +75,7 @@ public class CiCdController : ControllerBase
 
     private static bool IsInputValid(string? input)
     {
-        if (input == null)
+        if (string.IsNullOrEmpty(input))
         {
             return false;
         }
